@@ -1,0 +1,191 @@
+{
+  "users": [
+    {
+      "_id": "t1",
+      "email": "teacher1@example.com",
+      "password": "$2b$12$K8HFh3/N4v4MDKHs/a.YXOYbpGv.Q1ZKHwLKxeEzlzQkrXGufWyxW",
+      "firstName": "John",
+      "lastName": "Smith",
+      "role": "teacher",
+      "department": "Computer Science",
+      "token": null
+    },
+    {
+      "_id": "t2",
+      "email": "teacher2@example.com",
+      "password": "$2b$12$K8HFh3/N4v4MDKHs/a.YXOYbpGv.Q1ZKHwLKxeEzlzQkrXGufWyxW",
+      "firstName": "Sarah",
+      "lastName": "Johnson",
+      "role": "teacher",
+      "department": "Computer Science",
+      "token": null
+    },
+    {
+      "_id": "s1",
+      "email": "student1@example.com",
+      "password": "$2b$12$K8HFh3/N4v4MDKHs/a.YXOYbpGv.Q1ZKHwLKxeEzlzQkrXGufWyxW",
+      "firstName": "Alice",
+      "lastName": "Brown",
+      "role": "student",
+      "department": "Computer Science",
+      "usn": "CS001",
+      "token": null
+    },
+    {
+      "_id": "s2",
+      "email": "student2@example.com",
+      "password": "$2b$12$K8HFh3/N4v4MDKHs/a.YXOYbpGv.Q1ZKHwLKxeEzlzQkrXGufWyxW",
+      "firstName": "Bob",
+      "lastName": "Wilson",
+      "role": "student",
+      "department": "Computer Science",
+      "usn": "CS002",
+      "token": null
+    },
+    {
+      "_id": "s3",
+      "email": "student3@example.com",
+      "password": "$2b$12$K8HFh3/N4v4MDKHs/a.YXOYbpGv.Q1ZKHwLKxeEzlzQkrXGufWyxW",
+      "firstName": "Charlie",
+      "lastName": "Davis",
+      "role": "student",
+      "department": "Computer Science",
+      "usn": "CS003",
+      "token": null
+    }
+  ],
+  "courses": [
+    {
+      "_id": "c1",
+      "name": "Web Development",
+      "teacherId": "t1",
+      "department": "Computer Science",
+      "createdAt": "2024-03-01T00:00:00Z"
+    },
+    {
+      "_id": "c2",
+      "name": "Database Systems",
+      "teacherId": "t1",
+      "department": "Computer Science",
+      "createdAt": "2024-03-01T00:00:00Z"
+    },
+    {
+      "_id": "c3",
+      "name": "Machine Learning",
+      "teacherId": "t2",
+      "department": "Computer Science",
+      "createdAt": "2024-03-01T00:00:00Z"
+    }
+  ],
+  "enrollments": [
+    {
+      "_id": "e1",
+      "courseId": "c1",
+      "studentId": "s1",
+      "enrolledAt": "2024-03-01T00:00:00Z"
+    },
+    {
+      "_id": "e2",
+      "courseId": "c1",
+      "studentId": "s2",
+      "enrolledAt": "2024-03-01T00:00:00Z"
+    },
+    {
+      "_id": "e3",
+      "courseId": "c1",
+      "studentId": "s3",
+      "enrolledAt": "2024-03-01T00:00:00Z"
+    },
+    {
+      "_id": "e4",
+      "courseId": "c2",
+      "studentId": "s1",
+      "enrolledAt": "2024-03-01T00:00:00Z"
+    },
+    {
+      "_id": "e5",
+      "courseId": "c2",
+      "studentId": "s2",
+      "enrolledAt": "2024-03-01T00:00:00Z"
+    }
+  ],
+  "attendance": [
+    {
+      "_id": "a1",
+      "courseId": "c1",
+      "studentId": "s1",
+      "markedAt": "2024-03-01T09:00:00Z",
+      "location": {
+        "latitude": 12.9716,
+        "longitude": 77.5946
+      }
+    },
+    {
+      "_id": "a2",
+      "courseId": "c1",
+      "studentId": "s1",
+      "markedAt": "2024-03-02T09:00:00Z",
+      "location": {
+        "latitude": 12.9716,
+        "longitude": 77.5946
+      }
+    },
+    {
+      "_id": "a3",
+      "courseId": "c1",
+      "studentId": "s2",
+      "markedAt": "2024-03-01T09:00:00Z",
+      "location": {
+        "latitude": 12.9716,
+        "longitude": 77.5946
+      }
+    },
+    {
+      "_id": "a4",
+      "courseId": "c1",
+      "studentId": "s2",
+      "markedAt": "2024-03-02T09:00:00Z",
+      "location": {
+        "latitude": 12.9716,
+        "longitude": 77.5946
+      }
+    }
+  ],
+  "qrcodes": [
+    {
+      "_id": "q1",
+      "courseId": "c1",
+      "generatedAt": "2024-03-01T09:00:00Z"
+    },
+    {
+      "_id": "q2",
+      "courseId": "c1",
+      "generatedAt": "2024-03-02T09:00:00Z"
+    },
+    {
+      "_id": "q3",
+      "courseId": "c1",
+      "generatedAt": "2024-03-03T09:00:00Z"
+    }
+  ],
+  "resources": [
+    {
+      "_id": "r1",
+      "title": "Web Development Slides",
+      "type": "application/pdf",
+      "url": "/files/web-dev-slides.pdf",
+      "courseId": "c1",
+      "uploadedBy": "t1",
+      "uploadedAt": "2024-03-01T00:00:00Z"
+    },
+    {
+      "_id": "r2",
+      "title": "Database Notes",
+      "type": "application/pdf",
+      "url": "/files/db-notes.pdf",
+      "courseId": "c2",
+      "uploadedBy": "t1",
+      "uploadedAt": "2024-03-01T00:00:00Z"
+    }
+  ]
+}
