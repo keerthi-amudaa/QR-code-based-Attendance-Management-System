@@ -69,12 +69,23 @@ It supports **role-based dashboards** for:
 
 ## 🖼️ Screenshots
 
-> _(*Add actual screenshots in the GitHub repo using `![](/path/to/image)` syntax)*_
+- 🧑‍🏫 ER Diagram
 
-- ✅ Teacher Dashboard
-- 📱 QR Code Scanner Interface
-- 📊 Attendance Report View
-- 📂 Resource Upload & Access
+  
+![Teacher Dashboard - QR](screenshots/Screenshot%202025-07-17%20131848.png)
+
+
+
+- 🧑‍🏫 Teacher Dashboard - QR Code Generation
+
+    
+![Student Dashboard - Attendance](screenshots/Screenshot%202025-07-17%20132005.png)
+
+
+
+- 🎓 Student Dashboard
+![ER Diagram](screenshots/Screenshot%202025-07-17%20132022.png)
+
 
 ---
 
